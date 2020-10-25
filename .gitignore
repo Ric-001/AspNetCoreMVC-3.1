@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/RicBookStore/RicBookStore/bin/Debug/netcoreapp3.1
+/RicBookStore/RicBookStore/obj
+/RicBookStore/.vs/RicBookStore/config
