@@ -27,6 +27,7 @@ namespace RicBookStore
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
 
             //app.Use(async (context,next) =>
             //{
