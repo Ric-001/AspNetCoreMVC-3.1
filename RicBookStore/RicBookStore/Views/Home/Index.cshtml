@@ -7,14 +7,27 @@
 <html>
 <head>
     <title>Page Title</title>
+    <link href="~/css/Site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
+<body class="container">
 
 
-    <img src="~/images/Computer Icon.png" alt="Logo"/>
-   
-    <h1>Welcome to the Ric book store application</h1>
-    <p>This is a paragraph with some importan information.</p>
+    <img src="~/images/Computer Icon.png" class="logo" alt="Logo" />
+    <input type="button" value="Clícame" class="btn-dark" />
+    <img src="~/images/Euro_ico64.ico" />
+    <h1 class="h1">Welcome to the Ric book store application</h1>
+    <p class=" p-2"> This is a paragraph with some importan information.</p>
+
+
+    <script src="~/lib/jquery/jquery.js"></script>
 
 </body>
+
 </html>
+
+<script>
+    $(document).ready(function () {
+        alert("Buenas tardes si la página se ha cargado")
+    });
+</script>
