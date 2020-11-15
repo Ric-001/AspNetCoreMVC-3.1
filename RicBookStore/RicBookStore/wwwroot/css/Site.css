@@ -8,5 +8,14 @@
 
 .jumbotron {
     background:center;
-    background-color: lightcyan;
+    background-color: rgba(128,13,13,0.5);
+ }
+
+.footer{
+    height:50px;
 }
+.hijo {
+    /* IMPORTANTE */
+    line-height: 50px;
+}
+

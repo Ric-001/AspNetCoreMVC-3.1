@@ -36,59 +36,21 @@ namespace RicBookStore
 
             app.UseStaticFiles();
 
-            //app.UseStaticFiles(new StaticFileOptions()
-            //{
-            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "MyStaticFiles")),
-            //    RequestPath = "/MyStaticFiles"
-            //});
-            //app.Use(async (context,next) =>
-            //{
-            //    await context.Response.WriteAsync($"Hello from my first middleware{Environment.NewLine}");
-            //    await next();
-            //    await context.Response.WriteAsync($"Hello from my first middleware response{Environment.NewLine}");
-            //});
-
-            //app.Use(async (context, next) =>
-            //{
-            //    await context.Response.WriteAsync($"Hello from my second middleware{Environment.NewLine}");
-            //    await next();
-            //    await context.Response.WriteAsync($"Hello from my second middleware response{Environment.NewLine}");
-            //});
-
-            //app.Use(async (context, next) =>
-            //{
-            //    await context.Response.WriteAsync($"Hello from my third middleware{Environment.NewLine}");
-            //    await next();
-            //});
-
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.Map("/", async context =>
-                //{
-                //    if (env.IsDevelopment())
-                //        await context.Response.WriteAsync($"Hello Ric World!{Environment.NewLine}The enviroment is: Dev");
-                //    else if (env.IsProduction())
-                //        await context.Response.WriteAsync($"Hello Ric World!{Environment.NewLine}The enviroment is:Prod");
-                //    else if (env.IsStaging())
-                //        await context.Response.WriteAsync($"Hello Ric World!{Environment.NewLine}The enviroment is:Stag");
-                //    else if (env.IsEnvironment("Develop"))
-                //        await context.Response.WriteAsync($"Hello Ric World!{Environment.NewLine}The enviroment is:custom name Develop");
-
-
-                //});
                 
                 endpoints.MapDefaultControllerRoute();
             });
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.Map("/Ric", async context =>
-                {
-                    await context.Response.WriteAsync($"Hello hello Ric World!{Environment.NewLine}");
-                });
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.Map("/Ric", async context =>
+            //    {
+            //        await context.Response.WriteAsync($"Hello hello Ric World!{Environment.NewLine}");
+            //    });
+            //});
         }
     }
 }

@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="/">
-                        <img src="~/images/Computer Icon.png" width="40" height="35"/>
+                        <img src="~/images/Computer Icon.png" width="80" height="60"/>
                         Ric Web Page
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,11 @@
         <main role="main">
             @RenderBody()
         </main>
-
+        <footer class="border-top footer text-muted text-center">
+            <div class="container hijo">
+                <span>Copyright  &copy; Book Store @DateTime.Now.Year</span>
+            </div>
+        </footer>
         
     </div>
 </body>
