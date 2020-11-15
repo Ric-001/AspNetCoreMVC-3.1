@@ -20,7 +20,7 @@ namespace RicBookStore.Controllers
         {
             var data = bookRepository.GetAllBooks();
 
-            return View();
+            return View(data);
         }
         public ViewResult GetBook(int id)
         {
